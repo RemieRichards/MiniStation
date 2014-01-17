@@ -132,14 +132,14 @@ obj/item/weapon/wirerod/attackby(var/obj/item/I, mob/user as mob)
 
 
 /obj/item/weapon/raidensword
-	name = "high frequency katana"
-	desc = "RULES OF NATURE"
+	name = "high frequency blade"
+	desc = "It's time to LET 'ER RIP!"
 	icon_state = "raidensword"
 	item_state = "raidensword"
 	flags = FPRINT | TABLEPASS | CONDUCT
 
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 70
+	force = 45
 	throwforce = 99
 	w_class = 3
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -170,4 +170,26 @@ obj/item/weapon/wirerod/attackby(var/obj/item/I, mob/user as mob)
 		return(BRUTELOSS)
 
 /obj/item/weapon/nigurslair/IsShield()
+		return 1
+
+
+/obj/item/weapon/samsword
+	name = "high frequency murasama"
+	desc = "Let's dance!"
+	icon_state = "samsword"
+	item_state = "samsword"
+	flags = FPRINT | TABLEPASS | CONDUCT
+
+	slot_flags = SLOT_BELT | SLOT_BACK
+	force = 70
+	throwforce = 30
+	w_class = 3
+	hitsound = 'sound/weapons/bladeslice.ogg'
+	attack_verb = list("brazil'd", "slashed", "stabbed", "charmed", "torn", "sam'd", "diced", "schooled")
+
+	suicide_act(mob/user)
+		viewers(user) << "\red <b>[user] is slitting \his stomach open with the [src.name]! It looks like \he's trying to commit seppuku.</b>"
+		return(BRUTELOSS)
+
+/obj/item/weapon/samsword/IsShield()
 		return 1
