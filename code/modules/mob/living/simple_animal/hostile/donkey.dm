@@ -1,4 +1,4 @@
-/mob/living/simple_animal/hostile/creature
+/mob/living/simple_animal/hostile/donkey // This comment remains here to show that Eddie is a Dummkopf - RR
 	name = "Donkey"
 	desc = "OWWWAH SWOMP!"
 	speak_emote = list("neighs","farts")
