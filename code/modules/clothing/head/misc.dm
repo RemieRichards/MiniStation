@@ -163,6 +163,13 @@
 	item_state = "bearpelt"
 	flags = BLOCKHAIR
 
+/obj/item/clothing/head/monkeypelt
+	name = "monkey pelt hat"
+	desc = "Ook?"
+	icon_state = "monkeypelt"
+	item_state = "monkeypelt"
+	flags = BLOCKHAIR
+
 /obj/item/clothing/head/xenos
 	name = "xenos helmet"
 	icon_state = "xenos"
