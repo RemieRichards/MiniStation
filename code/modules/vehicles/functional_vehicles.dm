@@ -10,6 +10,11 @@
 	cannot_move_txt = "Your bike's wheels have nothing to spin against!"
 	position = 1
 
+/obj/structure/stool/bed/chair/vehicle/bike/New()
+	..()
+	var/possible_icons = pick("Bike_blue", "Bike_red", "Bike_yellow", "Bike_green", "Bike_orange", "Bike_purple", "Bike_lavender", "Bike_marroon")
+	icon_state = "[possible_icons]"
+
 //----------- SPACE VEHICLES -----------\\ - Don't you even dare to use these yet - RR
 
 /obj/structure/stool/bed/chair/vehicle/space/pod
