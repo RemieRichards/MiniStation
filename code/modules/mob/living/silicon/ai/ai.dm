@@ -132,7 +132,7 @@ var/list/ai_list = list()
 		return
 
 		//if(icon_state == initial(icon_state))
-	var/icontype = input("Please, select a display!", "AI", null/*, null*/) in list("Clown", "Monochrome", "Blue", "Inverted", "Firewall", "Green", "Red", "Static", "Red October", "Rainbow", "Animu", "President", "Gygas", "Helios", "Banned")
+	var/icontype = input("Please, select a display!", "AI", null/*, null*/) in list("Clown", "Monochrome", "Blue", "Inverted", "Firewall", "Green", "Red", "Static", "Red October", "Rainbow", "Animu", "President", "Gygas", "Helios", "Banned", "Robert House")
 	if(icontype == "Clown")
 		icon_state = "ai-clown2"
 	else if(icontype == "Monochrome")
@@ -163,6 +163,8 @@ var/list/ai_list = list()
 		icon_state = "ai-gygas"
 	if(icontype == "Banned")
 		icon_state = "ai-banned"
+	if(icontype == "Robert House")
+		icon_state = "ai-robert"
 	//else
 			//usr <<"You can only change your display once!"
 			//return
